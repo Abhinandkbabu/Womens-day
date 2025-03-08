@@ -1,0 +1,98 @@
+/* Header.css */
+.header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .header-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    filter: brightness(50%);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .header-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+    animation: slideUp 1.5s ease-out;
+  }
+  
+  .header-text {
+    max-width: 800px;
+    color: white;
+  }
+  
+  .sparkles {
+    width: 24px;
+    height: 24px;
+    color: #a855f7;
+    animation: sparkle 1.5s infinite alternate;
+  }
+  
+  .header-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .header-subtitle {
+    font-size: 1.25rem;
+    color: #d1d5db;
+    margin-bottom: 2rem;
+  }
+  
+  .header-button {
+    background-color: #9333ea;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 9999px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .header-button:hover {
+    background-color: #7e22ce;
+  }
+
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes sparkle {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+  
